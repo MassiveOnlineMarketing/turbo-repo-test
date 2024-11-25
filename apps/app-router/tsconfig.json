@@ -11,9 +11,8 @@
   ],
   "compilerOptions": {
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@/styles": ["../../../packages/styles"]
     },
     "plugins": [
       {

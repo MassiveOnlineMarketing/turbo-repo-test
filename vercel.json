@@ -27,5 +27,9 @@
       "src": "/docs/(.*)",
       "dest": "/apps/syntax-ts/$1"
     }
-  ]
+  ],
+  "env": {
+    "PNPM_VERSION": "8.0.0"
+  },
+  "packageManager": "pnpm@8.0.0"
 }

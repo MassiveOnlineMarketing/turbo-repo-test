@@ -9,13 +9,6 @@
       }
     },
     {
-      "src": "apps/pages-router/package.json",
-      "use": "@vercel/next",
-      "config": {
-        "distDir": "apps/pages-router/.next"
-      }
-    },
-    {
       "src": "apps/syntax-ts/package.json",
       "use": "@vercel/next",
       "config": {
@@ -27,10 +20,6 @@
     {
       "src": "/(?!docs|app).*",
       "dest": "/apps/app-router/$1"
-    },
-    {
-      "src": "/app/(.*)",
-      "dest": "/apps/pages-router/$1"
     },
     {
       "src": "/docs/(.*)",

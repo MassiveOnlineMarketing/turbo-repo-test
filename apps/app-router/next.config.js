@@ -5,8 +5,7 @@ module.exports = {
     return [
       {
         source: '/docs/:path*',
-        destination: 'https://test.massiveonlinemarketing.nl/docs/:path*'
-      }
+        destination: 'https://syntax-ts.vercel.app/docs/:path*'      }
     ]
   }
 }

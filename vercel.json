@@ -1,12 +1,31 @@
 {
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/docs/:match*",
-      "destination": "/docs/:match*"
+      "src": "apps/app-router/package.json",
+      "use": "@vercel/next"
     },
     {
-      "source": "/:match*",
-      "destination": "/:match*"
+      "src": "apps/pages-router/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "apps/syntax-ts/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(?!docs|app).*",
+      "dest": "/apps/app-router/*"
+    },
+    {
+      "src": "/app/(.*)",
+      "dest": "/apps/pages-router/$1"
+    },
+    {
+      "src": "/docs/(.*)",
+      "dest": "/apps/syntax-ts/$1"
     }
   ]
 }

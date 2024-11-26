@@ -3,21 +3,30 @@
   "builds": [
     {
       "src": "apps/app-router/package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "apps/app-router/.next"
+      }
     },
     {
       "src": "apps/pages-router/package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "apps/pages-router/.next"
+      }
     },
     {
       "src": "apps/syntax-ts/package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "apps/syntax-ts/.next"
+      }
     }
   ],
   "routes": [
     {
       "src": "/(?!docs|app).*",
-      "dest": "/apps/app-router/*"
+      "dest": "/apps/app-router/$1"
     },
     {
       "src": "/app/(.*)",

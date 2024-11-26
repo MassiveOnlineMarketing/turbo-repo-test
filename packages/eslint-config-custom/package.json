@@ -21,7 +21,7 @@
   },
   "resolutions": {
     "eslint": "^8.57.0",
-    "babel-eslint": "^10.1.0"
+    "@babel/eslint-parser": "^7.25.9"
   },
   "publishConfig": {
     "access": "public"

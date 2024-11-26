@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: '/docs/:path*',
-        destination: 'https://syntax-ts.vercel.app/docs/:path*'      }
+        destination: '/docs/:path*'      }
     ]
   }
 }

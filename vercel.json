@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/docs/:match*",
+      "destination": "https://syntax-ts.vercel.app/docs/:match*"
+    },
+    {
+      "source": "/:match*",
+      "destination": "https://app-router.vercel.app/:match*"
+    }
+  ]
+}
